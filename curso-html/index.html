@@ -1,25 +1,43 @@
-<h1>Portfolio de Paula</h1>
-<p><strong>Ingeniera de Software</strong> con 1 año de experiencia</p>
+
+<div class= "flex-space navBar">
+    <nav class= "flex-space navBar__nav">
+        <a class = "navBar__nav-a" href="#experiencia">Experiencia</a>
+        <a class = "navBar__nav-a" href="#proyectos">Proyectos</a>
+        <a class = "navBar__nav-a" href="https://www.youtube.com/watch?v=7Ilu033ydSw" target="_blank"
+        rel="noreferrer">Youtube</a> <!--Encabezados-->
+        <button class ="boton" id="show">Ver más información</button>
+    </nav>
+</div>
+<header>
+<h1 class="title">Portfolio de Paula ❤️​</h1>
+
+<div>
+    <section class="presentacion flex-center">
+        <img class="presentacion_image-profile" width= "230rem" heigth=" 100rem" title="foto personal" src="foto.jpeg" alt="fotografía personal">
+        <p class= "presentacion_descripcion" >Estudiante de<strong> Ingeniería Informática</strong> en el último curso. </p>
+        <p class= "presentacion_descripcion" >Especializada en la rama de Software</p>
+    </section>
+    
+</div>
+
 <h2 id="experiencia">Experiencia</h2>
 <ul>
 <li class="">ESII</li>
-<li class="">AirBus</li>
 <!--<li value="">5</li>-->
 </ul>
 <!--<img title="foto de un paisaje" src="paisaje.jpg" >-->
-<img title="foto de un paisaje" src="paisaje.jpg" alt="fotografía de un paisaje con un bonito atardecer">
+
+</header>
 <head>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#FFF9">
     <title>Portfolio POL</title>
-    <meta rel="icon" type="image/jpeg" href="paisaje.jpg">
+    <meta rel="icon" type="image/jpeg" href="foto.jpeg">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel= "stylesheet" href="index.css">
 </head>
-<style>
-    body {
-    background: rgba(183, 71, 71, 0.9);
-    }
-</style>
+
 
 <!--<div>
     Tecnologías favoritas: HTML, CSS y JavaScript
@@ -41,16 +59,8 @@
 </div>
 -->
 
-<header>
-    <nav>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="https://www.youtube.com/watch?v=7Ilu033ydSw" target="_blank"
-        rel="noreferrer">Youtube</a> <!--Encabezados-->
-    </nav>
-</header>
 
-<video src="C:/Users/erika/Documents/paulaaortga.github.io/curso-html/sample_960x400_ocean_with_audio.mp4.mp4" type="video/mp4"></video>
+<video width="500px" src="C:/Users/erika/Documents/paulaaortga.github.io/curso-html/sample_960x400_ocean_with_audio.mp4.mp4" type="video/mp4"></video>
 
 
 <main>
@@ -67,29 +77,33 @@
 
         <h2 id="proyectos">Proyectos realizados</h2>
         <section>
-            <article>
+            <article class="articulo">
                 <header>
-                    <h4>Sitio Web</h4>
+                    <h4 class ="articulo_header-h4">Sitio Web</h4>
                 </header>
                 <p>Desarrollo de un sitio Web para la compra y alquiler de portátiles</p>
                 <footer>
                 <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
                 </footer>
             </article>
-            <article>
+            <article class="articulo">
                 <header>
-                    <h4>Aplicación e-commerce</h4>
+                    <h4 class ="articulo_header-h4">Aplicación e-commerce</h4>
                 </header>
-                <p>Desarrollo de una aplicación Web para una tienda.</p>
+                <body>
+                    <p>Desarrollo de una aplicación Web para una tienda.</p>
+                </body>
                 <footer>
                 <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
                 </footer>
             </article>
-            <article>
+            <article class="articulo">
                 <header>
-                    <h4>Aplicación móvil</h4>
+                    <h4 class = "articulo_header-h4">Aplicación móvil</h4>
                 </header>
-                <p>Desarrollo de una aplicación móvil para encontrar pareja</p>
+                <body>
+                    <p>Desarrollo de una aplicación móvil para encontrar pareja</p>
+                </body>
                 <footer>
                 <small>Tecnologías utilizadas: HTML, CSS</small>
                 </footer>
@@ -157,7 +171,7 @@
             <button id="cerrar">Cerrar</button>
         </dialog>
     
-        <button id="show">Ver más información</button>
+        
     
         <script>
             window.show.addEventListener('click', () => {
@@ -168,6 +182,7 @@
                 window.modal.close(); 
             });
         </script>
+
     </body>
 
 </main>
